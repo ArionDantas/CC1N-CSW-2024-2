@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com o ICONE no favoritos</title>
+</head>
+
+<body>
+    <h1>Trabalhando com imagens inicialmente</h1>
+
+    <hr>
+
+    <div>
+        <figure>
+            <img src="../image/cachorros.jpg" alt="Sete cachorros deitados" width="500px">
+        </figure>
+        <hr>
+
+        <figure>
+            <img src="../image/igreja_catolica.jpg" alt="Interior da Igreja Católica" width="500px">
+            <figcaption>Interior da Igreja Católica</figcaption>
+        </figure>
+        <hr>
+    </div>
+
+    <picture>
+        <source media="(max-width: 767)" srcset="../image/cachorros.jpg">
+        <source media="(min-width: 768)" srcset="./image/cachorros.jpg">
+        <img src="../image/cachorros.jpg" alt="Sete cachorros deitados" width="100%">
+    </picture>
+
+</body>
+
+</html>
